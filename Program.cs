@@ -15,12 +15,27 @@
 // Console.WriteLine(result);
 //------------------------------------------------//
 // Задача 2
-// Вывлд на экран квадратов числа от 1 до N.
+// Вывод на экран квадратов числа от 1 до N.
+// P.S Это решение онли для нахождения квадрата числа))
+// int Square(int N)  // Вощвращаемае значение функция
+// {
+//     int result = N * N;
+//     return result;
+// }
 
-int Square(int N)
+// int result = Square(7);
+// Console.WriteLine(result);
+// Правильное решения, исходя из условия )
+void PrintSquares(int limit)  // Невозвращаемае значения функция
 {
-    int result = N * N;
-    return result;
+    int i = 1; //  переменная "Счётчик"
+    while (i <= limit) //цикл пока Счетчик меньше limit, исходя из условия задачи
+    {
+        Console.Write($"{i * i} ");
+        i = i + 1; // След. значения счетчика (от 1 до limit), можно написать "i++"
+    }
 }
-int result = Square(7);
-Console.WriteLine(result);
+
+PrintSquares(5);   // 3 раза вызываем функцию(как в начале лекции в задачи без функций)
+PrintSquares(10);  //
+PrintSquares(15);  //
