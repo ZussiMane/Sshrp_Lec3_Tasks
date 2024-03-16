@@ -17,3 +17,10 @@
 // Задача 2
 // Вывлд на экран квадратов числа от 1 до N.
 
+int Square(int N)
+{
+    int result = N * N;
+    return result;
+}
+int result = Square(7);
+Console.WriteLine(result);
